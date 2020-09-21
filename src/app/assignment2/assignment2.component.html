@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <button *ngIf="!statusDisplay,else buttonHiden" class="btn btn-success" (click)="showParagraph()">Display Details</button>
+                <ng-template #buttonHiden>
+                    <button class="btn btn-success" (click)="showParagraph()">Hidden Details</button>
+                </ng-template>
+                    <p *ngIf="statusDisplay"> 
+                        Xin chào Angular!
+                    </p>
+                    <div *ngFor="let log of contentLogs; let i = index" [ngStyle]="{ 'background-color' : i >=4 ? 'blue' : 'white' }" [ngClass]="{'p-white' : i >= 4 }">
+                        {{ log }}
+                    </div>
+            </div>  
+        </div>
+    </div>
+</div>

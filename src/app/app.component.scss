@@ -1,0 +1,66 @@
+.header{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+.item-left{
+    float: left;
+}
+.item-right{
+    float: right;
+}
+.menu ul{
+    text-align: center;
+}
+.menu li{
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    background-color: red;
+    &:hover{
+        background: #000;
+    }
+}
+.slider{
+    width: auto;
+    height: 500px;
+    background-color: yellow;
+}
+.product-list{
+    text-align: center;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    background-color: red;
+    min-width: 200px;
+    height: 300px;
+}
+.footer{
+    background-color: rosybrown;
+    text-align: center;
+}
+.promotion-panel{
+    display: flex;
+    justify-content: center;
+   
+}
+.promotion{
+    background-color: saddlebrown;
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-promotion{
+    width: 300px;
+    height: 180px;
+    background-color: salmon;
+
+}
